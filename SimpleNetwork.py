@@ -1,12 +1,14 @@
-from SimpleNeurom import Neuron
+from SimpleNeuron import Neuron
 import numpy as np
+
 
 def sigmoid(x) -> float:
     return 1 / (1 + np.exp(-x))
 
+
 class SimpleNetwork:
     def __init__(self):
-        weights = np.array([0,1])
+        weights = np.array([0, 1])
         basis = 0
         self.h1 = Neuron(weights, basis)
         self.h2 = Neuron(weights, basis)
@@ -21,5 +23,5 @@ class SimpleNetwork:
 
 
 network = SimpleNetwork()
-x = np.array([2,3])
+x = np.array([2, 3])
 print(network.feedforward(x))

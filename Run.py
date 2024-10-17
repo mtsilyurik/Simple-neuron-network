@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from Perceptron import Perceptron
-from SimpleNeurom import Neuron
+from SimpleNeuron import Neuron
 
 # x1 = 2, x2 = 3
 Xi = np.array([2, 3])
