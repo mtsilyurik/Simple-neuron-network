@@ -23,5 +23,5 @@ class SimpleNetwork:
 
 
 network = SimpleNetwork()
-x = np.array([2, 3])
+x = np.array([4, 4])
 print(network.feedforward(x))
