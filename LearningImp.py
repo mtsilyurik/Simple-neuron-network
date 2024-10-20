@@ -126,6 +126,14 @@ all_y_trues = np.array([
     1, # Diana
 ])
 
+check_data = np.array([
+    [-14, -7, 1],
+    [30, -4, 1],
+    [19, 1, 1],
+    [43, 5, 0],
+    [92, 9, 0]
+])
+
 if __name__ == '__main__':
     network = LearningNetwork()
     network.train(data, all_y_trues)
@@ -140,4 +148,8 @@ if __name__ == '__main__':
     plt.plot(network.L)
     plt.grid(True)
     plt.show()
+
+    for d in check_data:
+        print(d[:-1])
+        print(f"Checking {network.feedforward(d[:-1])} should be {d[-1]}")
 
