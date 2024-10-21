@@ -21,17 +21,17 @@ class LearningNetwork:
 
     def __init__(self):
         # Вес
-        self.w1 = np.random.normal()
-        self.w2 = np.random.normal()
-        self.w3 = np.random.normal()
-        self.w4 = np.random.normal()
-        self.w5 = np.random.normal()
-        self.w6 = np.random.normal()
+        self.w1 = 1
+        self.w2 = 1
+        self.w3 = 1
+        self.w4 = 1
+        self.w5 = 1
+        self.w6 = 1
 
         # Смещения
-        self.b1 = np.random.normal()
-        self.b2 = np.random.normal()
-        self.b3 = np.random.normal()
+        self.b1 = 0
+        self.b2 = 0
+        self.b3 = 0
 
         self.L = list()
 
